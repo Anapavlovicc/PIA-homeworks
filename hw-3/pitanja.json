@@ -1,0 +1,67 @@
+{
+    "0": {
+        "redniBroj": 1,
+        "pitanje": "Koliko je 15*11?",
+        "odgovor": "165",
+        "odgovorSeUnosi": true
+    },
+    "1": {
+        "redniBroj": 2,
+        "pitanje": "R na kvadrat pi je površina?",
+        "odgovori": "kruga, kvadrata, pravougaonika",
+        "odgovor": "kruga",
+        "odgovorSeUnosi": false
+    },
+    "2": {
+        "redniBroj": 3,
+        "pitanje": "Koji broj pomnožen 4 puta sa samim sobom daje 81?",
+        "odgovor": "3",
+        "odgovorSeUnosi": true
+    },
+    "3": {
+        "redniBroj": 4,
+        "pitanje": "3/4?",
+        "odgovori": "25%, 50%, 75%",
+        "odgovor": "75%",
+        "odgovorSeUnosi": false
+    },
+    "4": {
+        "redniBroj": 5,
+        "pitanje": "Koji broj umanjen za 10 i pomnožen sa 4 daje 20?",
+        "odgovor": "15",
+        "odgovorSeUnosi": true
+    },
+    "5": {
+        "redniBroj": 6,
+        "pitanje": "120%?",
+        "odgovori": "5/6, 6/5, 5/4",
+        "odgovor": "6/5",
+        "odgovorSeUnosi": false
+    },
+    "6": {
+        "redniBroj": 7,
+        "pitanje": "Koliko iznosi kosinus od 0?",
+        "odgovor": "1",
+        "odgovorSeUnosi": true
+    },
+    "7": {
+        "redniBroj": 8,
+        "pitanje": "18 ÷ 3 (5 – 4 + 1) = ?",
+        "odgovori": "12, 0, 3",
+        "odgovor": "12",
+        "odgovorSeUnosi": false
+    },
+    "8": {
+        "redniBroj": 9,
+        "pitanje": "Koliko iznosi kvadratni koren od 1024?",
+        "odgovor": "32",
+        "odgovorSeUnosi": true
+    },
+    "9": {
+        "redniBroj": 10,
+        "pitanje": "89+89=?",
+        "odgovori": "178, 208, 188",
+        "odgovor": "178",
+        "odgovorSeUnosi": false
+    }
+}
