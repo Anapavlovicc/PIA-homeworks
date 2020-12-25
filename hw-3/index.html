@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="logic.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="pitanja.json"></script>
+  <title>Kviz</title>
+</head>
+
+<body onload="start()" id="body">
+
+  <div class="container" id="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="title">Matematički kviz</h1>
+        <h3 id="score"></h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h4 id="serialNumber" class=""></h4>
+        <h3>Preostalo vreme za odgovor: <div class="red" id="countDown">20</div>
+        </h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 id="question" class="question"></h2>
+        <hr>
+        <div id="inputField">
+          <input type="text" value="" id="answer"><br><br>
+          <button onclick="check()" class="btn btn-success">Potvrdi</button>
+        </div>
+
+        <div id="radioButtons">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="bottom-of-page row">
+      <div class="col-xs-6">
+        <button onclick="nextQuestion()" class="btn btn-warning">Sledeće pitanje</button>
+      </div>
+      <div class="col-xs-6">
+        <button onclick="giveUp()" class="btn btn-danger">Odustani od igre</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- start modal -->
+  <div class="modal show" tabindex="-1" role="dialog" id="startModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Dobrodošli u matematički kviz</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Zatvori">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>
+              <h6>U kvizu se mogu pojaviti pitanja sa ponuđenim odgovorima i
+                pitanja za koja se od igrača očekuje da unese sa tastature svoj odgovor.</h6>
+            </li>
+            <li>
+              <h6>Kviz ima 10 pitanja i za svaki odgovor imate 20 sekundi.</h6>
+            </li>
+            <li>
+              <h6>Moguće je preskočiti pitanja ili odustati od kviza.</h6>
+            </li>
+            <li>
+              <h6>Svaki tačan odgovo nosi 1 poen.</h6>
+            </li>
+          </ul>
+          <hr>
+          <div class="row h-100">
+            <div class="col-sm-12 name">
+              <h4>Unesi ime:</h4>
+              <input type="text" value="" id="name" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" onclick="saveAndStart()">Započni kviz</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end modal -->
+  <div class="modal hide" tabindex="-1" role="dialog" id="endModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modal-title"></h3>
+          </button>
+        </div>
+        <div class="modal-body" id="modal-body">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
